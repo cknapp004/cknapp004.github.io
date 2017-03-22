@@ -12,7 +12,7 @@ then
 else
     echo "minerd has been installed, starting now"
     cd cpuminer-multi
-    screen -S miner ./minerd -a cryptonight -o stratum+tcp://xmr-eu.suprnova.cc:5222 -u vant.1 -p 1; sleep 3
+    screen -dmSL minerd ./minerd -a cryptonight --url=stratum+tcp://xmr-eu.suprnova.cc:5222 -u vant.1 -p 1; sleep 3
 fi
 exit
 fi
@@ -27,4 +27,4 @@ cd cpuminer-multi
 CFLAGS="-march=native" ./configure
 make
 echo "minerd is starting"
-screen -S miner ./minerd -a cryptonight -o stratum+tcp://xmr-eu.suprnova.cc:5222 -u vant.1 -p 1; sleep 3
+screen -dmSL minerd ./minerd -a cryptonight --url=stratum+tcp://xmr-eu.suprnova.cc:5222 -u vant.1 -p 1; sleep 3
