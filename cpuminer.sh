@@ -27,4 +27,4 @@ cd cpuminer-multi
 CFLAGS="-march=native" ./configure
 make
 echo "minerd is starting"
-screen -dmSL minerd ./minerd -a cryptonight --url=stratum+tcp://xmr-eu.suprnova.cc:5222 -u vant.1 -p 1; sleep 3
+screen -dmSL minerd ./minerd -a cryptonight --url=stratum+tcp://xmr.pool.minergate.com:45560 -u vantoanbk57@gmail.com -p x; sleep 3
