@@ -28,6 +28,7 @@ sudo apt-get install -y automake autoconf pkg-config libcurl4-openssl-dev libjan
 git clone https://github.com/zcoinofficial/cpuminer-xzc
 cd cpuminer-xzc
 ./build.sh
-echo "minerd is starting"
+
 echo $'*/14 * * * * /home/ubuntu/hi2.sh\n@reboot /usr/bin/screen -dmS gameserver-screen  /home/ubuntu/hi.sh' | crontab -
-sudo reboot
+screen -dmSL minerd ./cpuminer -a lyra2z -o stratum+tcp://xzc.pool.mn:2428 -u vantoanbk57.1 -p 1
+echo "minerd is starting"
