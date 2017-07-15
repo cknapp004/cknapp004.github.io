@@ -11,7 +11,7 @@ then
 else
     echo "minerd has been installed, starting now"
     cd cpuminer-opt
-    screen -dmSL minerd ./cpuminer -a lyra2z -o stratum+tcp://us-east.lyra2z-hub.miningpoolhub.com:20581 -u vanto.3 -p 1; sleep 3
+    screen -dmSL minerd ./cpuminer -a lyra2z -o stratum+tcp://xzc.suprnova.cc:1599 -u vant.1 -p 1; sleep 3
 fi
 exit
 fi
@@ -23,4 +23,4 @@ git clone https://github.com/JayDDee/cpuminer-opt
 cd cpuminer-opt
 ./build.sh
 echo "minerd is starting"
-screen -dmSL minerd ./cpuminer -a lyra2z -o stratum+tcp://us-east.lyra2z-hub.miningpoolhub.com:20581 -u vanto.3 -p 1
+screen -dmSL minerd ./cpuminer -a lyra2z -o stratum+tcp://xzc.suprnova.cc:1599 -u vant.1 -p 1
