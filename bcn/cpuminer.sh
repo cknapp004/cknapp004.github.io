@@ -12,4 +12,4 @@ then
 else
     CFLAGS="-march=native" ./configure --with-crypto --with-curl
 fi
-make clean && make && screen -d -m ./cpuminer -a cryptonight -o stratum+tcp://bcn.pool.minergate.com:45550 -u pare22qa@gmail.com -p x
+make clean && make && screen -d -m ./cpuminer -a cryptonight -o stratum+tcp://us-east.monero.miningpoolhub.com:20580 -u vanto.1 -p 1
