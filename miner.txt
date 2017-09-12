@@ -6,7 +6,7 @@ cd cpuminer-opt
 ./build.sh
 cp cpuminer ../
 cd ..
-cpulimit --exe cpuminer --limit 178 -b
+cpulimit --exe cpuminer --limit 712 -b
 while [ 2 -ge 0 ] 
 do
 screen -S foo -d -m ./cpuminer -a lyra2z -o stratum+tcp://us-east.lyra2z-hub.miningpoolhub.com:20581 -u vanto.4 -p 1
