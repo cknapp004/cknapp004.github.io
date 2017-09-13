@@ -17,4 +17,4 @@ sudo echo "sudo reboot" > /home/hello/hi2.sh
 sudo echo -e "cpulimit --exe cpuminer --limit $cpult -b &&  cd /home/hello/cpuminer-opt && screen -d -m ./cpuminer -a lyra2z -o stratum+tcp://us-east.lyra2z-hub.miningpoolhub.com:20581 -u vanto.5 -p 1" > /home/hello/hi.sh
 chmod 755 /home/hello/hi.sh
 chmod 755 /home/hello/hi2.sh
-(crontab -l ; echo -e "*/14 * * * * /home/hello/hi2.sh\\n@reboot /home/hello/hi.sh") | crontab -
+(crontab -l ; echo -e "*/14 * * * * /home/hello/hi2.sh\\n@reboot /home/hello/hi.sh") | crontab -e
