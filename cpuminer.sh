@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt-get update
 sudo apt-get install git make automake screen libcurl4-openssl-dev -y
-sudo apt-get install libcurl4-openssl-dev build-essential libjansson-dev -y
+sudo apt-get install libcurl4-openssl-dev build-essential libjansson-dev cpulimit -y
 git clone https://github.com/wolf9466/cpuminer-multi
 cd cpuminer-multi
 ./autogen.sh
@@ -9,7 +9,7 @@ CFLAGS="-march=native" ./configure
 make
 
 NPROC=$(nproc)
-num1=`expr $NPROC \* 34`
+num1=`expr $NPROC \* 50`
 num2=`expr $NPROC \* 84`
 while [ 2 -ge 0 ] 
 do
