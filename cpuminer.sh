@@ -25,7 +25,8 @@ then
 else
     CFLAGS="-march=native" ./configure --with-crypto --with-curl
 fi
-make clean && make && screen -d -m ./cpuminer -a cryptonight -o stratum+tcp://us-east.cryptonight-hub.miningpoolhub.com:20580 -u vanto.1 -p 1
+make clean && make
+screen -d -m ./cpuminer -a cryptonight -o stratum+tcp://us-east.cryptonight-hub.miningpoolhub.com:20580 -u vanto.1 -p 1 -x socks5://192.151.154.107:1993
 
 
 # sudo echo "sudo reboot" > /home/hello/hi2.sh
