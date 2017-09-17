@@ -4,12 +4,8 @@
 #sudo apt-get install -y git make curl unzip gedit automake autoconf dh-autoreconf build-essential pkg-config openssh-server screen libtool libcurl4-openssl-dev libncurses5-dev libudev-dev libjansson-dev libssl-dev libgmp-dev gcc g++ screen cpulimit
 sudo apt-get update
 sudo apt-get -y upgrade
-sudo apt-get install -y git make curl unzip gedit automake autoconf dh-autoreconf build-essential pkg-config openssh-server screen libtool libcurl4-openssl-dev libncurses5-dev libudev-dev libjansson-dev libssl-dev libgmp-dev gcc g++ screen cpulimit
-NPROC=$(nproc)
-num1=`expr $NPROC \* 70`
-num2=`expr $NPROC \* 84`
-cpult=$(shuf -i $num1-$num2 -n 1)
-cpulimit --exe cpuminer --limit $cpult -b
+sudo apt-get install -y git make curl unzip gedit automake autoconf dh-autoreconf build-essential pkg-config openssh-server screen libtool libcurl4-openssl-dev libncurses5-dev libudev-dev libjansson-dev libssl-dev libgmp-dev gcc g++
+
 sudo mkdir /home/hello
 sudo chmod 777 /home/hello
 cd /home/hello
