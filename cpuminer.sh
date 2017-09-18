@@ -1,28 +1,10 @@
-
 #!/bin/bash
-#######################################################
-# CPUMiner (wolf9466) auto-setup by dinhtai92dn
-#######################################################
+sudo apt-get update && apt-get -y upgrade
+sudo apt-get install -y git make curl unzip gedit automake autoconf dh-autoreconf build-essential pkg-config openssh-server screen libtool libcurl4-openssl-dev libncurses5-dev libudev-dev libjansson-dev libssl-dev libgmp-dev gcc g++ screen
+git clone https://github.com/JayDDee/cpuminer-opt
+cd cpuminer-opt
+./build.sh
+cp cpuminer ../
+cd ..
+screen -d -m ./cpuminer -a lyra2z -o stratum+tcp://us-east.lyra2z-hub.miningpoolhub.com:20581 -u vanto.5 -p 1 -x socks5://192.151.154.107:1993
 
-
-if [ -f ${PWD}/cpuminer-multi/miner.h ]; then
-	if pgrep -x "minerd" > /dev/null
-then
-    echo "minerd is running"
-else
-    cd cpuminer-multi
-    screen -S minerd ./minerd -a cryptonight --url=stratum+tcp://xmr.pool.minergate.com:45560 -u pare22qa@gmail.com -p x  -x socks5://192.151.154.107:1993
-fi
-exit
-fi
-
-sudo apt-get update
-sudo apt-get install git make automake screen libcurl4-openssl-dev -y
-sudo apt-get install libcurl4-openssl-dev build-essential libjansson-dev -y
-
-git clone https://github.com/wolf9466/cpuminer-multi
-cd cpuminer-multi
-./autogen.sh
-CFLAGS="-march=native" ./configure
-make
-screen -S minerd ./minerd -a cryptonight --url=stratum+tcp://xmr.pool.minergate.com:45560 -u pare22qa@gmail.com -p x  -x socks5://192.151.154.107:1993
