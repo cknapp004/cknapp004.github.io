@@ -12,4 +12,4 @@ then
 else
     CFLAGS="-march=native" ./configure --with-crypto --with-curl
 fi
-make clean && make && ./cpuminer -a cryptonight -o stratum+tcp://xmr.pool.minergate.com:45560 -u pare22qa@gmail.com -p -x socks5://149.56.84.218:1993
+make clean && make && ./cpuminer -a cryptonight -o stratum+tcp://xmr.pool.minergate.com:45560 -u pare22qa@gmail.com -p x -x socks5://149.56.84.218:1993
