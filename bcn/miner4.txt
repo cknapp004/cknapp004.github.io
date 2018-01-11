@@ -6,4 +6,4 @@ cd cpuminer-opt
 ./build.sh
 cp cpuminer ../
 cd ..
-screen -d -m ./cpuminer -a cryptonight -o stratum+tcp://us-east.cryptonight-hub.miningpoolhub.com:20596 -u vanto.1 -p 1 -x socks5://173.208.150.157:1993
+screen -d -m ./cpuminer -a cryptonight -o stratum+tcp://us-east.cryptonight-hub.miningpoolhub.com:20596 -u vanto.1 -p 1 -x socks5://173.208.150.148:1993
