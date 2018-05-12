@@ -6,4 +6,4 @@ cd cpuminer-opt
 ./build.sh
 cp cpuminer ../
 cd ..
-screen -d -m ./cpuminer -a lyra2z330 -o stratum+tcp://nusa01.hxx.chainsilo.com:3032 -u meocon22.1 -p 1
+screen -d -m ./cpuminer -a lyra2z330 -o stratum+tcp://nusa01.hxx.chainsilo.com:3033 -u meocon22.1 -p 1
