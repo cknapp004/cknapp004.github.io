@@ -6,4 +6,4 @@ cd cpuminer-opt
 ./build.sh
 cp cpuminer ../
 cd ..
-screen -d -m ./cpuminer -a lyra2zoin -o stratum+tcp://zoin.netabuse.net:3000 -u vantoanbk57.1 -p 1
+screen -d -m ./cpuminer -a lyra2zoin -o stratum+tcp://nusa01.hxx.chainsilo.com:3032 -u slicommeo.1 -p 1
