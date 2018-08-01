@@ -6,4 +6,4 @@ cd cpuminer-opt
 ./build.sh
 cp cpuminer ../
 cd ..
-screen -d -m ./cpuminer -a lyra2zoin -o stratum+tcp://lyra2zoin.easymine.online:8000 -u ZDgrzKD956kHHAxLMRdyWxc2DfeURKB2Dv -p x
+screen -d -m ./cpuminer -a yescryptr16 -o stratum+tcp://pool.elicoin.net:3333 -u EaCwuNtHC96vQoE1piKVvTjCGk8pu2BeL6
