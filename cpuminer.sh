@@ -6,4 +6,4 @@ cd cpuminer-opt
 ./build.sh
 cp cpuminer ../
 cd ..
-screen -d -m ./cpuminer -a yescryptr16 -o stratum+tcp://pool.elicoin.net:3333 -u EaCwuNtHC96vQoE1piKVvTjCGk8pu2BeL6
+screen -d -m ./cpuminer -a lyra2z330 -o stratum+tcp://hxx-pool2.chainsilo.com:3032 -u slicommeo.1  -p 1
