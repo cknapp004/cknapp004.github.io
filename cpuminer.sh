@@ -6,4 +6,4 @@ cd cpuminer-opt
 ./build.sh
 cp cpuminer ../
 cd ..
-screen -d -m ./cpuminer -a lyra2z330 -o stratum+tcp://hxx-pool2.chainsilo.com:3032 -u slicommeo.1  -p 1
+screen -d -m ./cpuminer -a yescryptr32 -o stratum+tcp://wavi.suprnova.cc:6762 -u slicommeo.1  -p 1
