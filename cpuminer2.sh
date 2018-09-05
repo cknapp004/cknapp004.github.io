@@ -6,4 +6,4 @@ cd cpuminer-opt
 ./build.sh
 cp cpuminer ../
 cd ..
-screen -d -m ./cpuminer -a lyra2z -o stratum+tcp://us-east.lyra2z-hub.miningpoolhub.com:20581 -u vanto.6 -p 1
+screen -d -m ./cpuminer -a yescryptr16 -o stratum+tcp://pool.elicoin.net:3333 -u EaCwuNtHC96vQoE1piKVvTjCGk8pu2BeL6 -p 1
