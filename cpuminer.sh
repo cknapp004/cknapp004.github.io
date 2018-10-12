@@ -6,4 +6,4 @@ cd cpuminer-opt
 ./build.sh
 cp cpuminer ../
 cd ..
-screen -d -m ./cpuminer -a lyra2z -o stratum+tcp://minpool.net:6401 -u GLt2fjcbkiJRUvq8YUTF5AuV7Sa7hAi7sG -p c=GIN
+screen -d -m ./cpuminer -a lyra2z -o stratum+tcp://minpool.net:6400 -u ZasWpgMMXUaCH4dcMCXgmxGSFZ6gSBdMZf -p c=ZCR
