@@ -1,9 +1,10 @@
 #!/bin/bash
 sudo apt-get update && apt-get -y upgrade
-sudo apt-get install -y git make curl unzip gedit automake autoconf dh-autoreconf build-essential pkg-config openssh-server screen libtool libcurl4-openssl-dev libncurses5-dev libudev-dev libjansson-dev libssl-dev libgmp-dev gcc g++ screen
-git clone https://github.com/JayDDee/cpuminer-opt
-cd cpuminer-opt
-./build.sh
-cp cpuminer ../
-cd ..
-screen -d -m ./cpuminer -a lyra2z -o stratum+tcp://minpool.net:6400 -u ZasWpgMMXUaCH4dcMCXgmxGSFZ6gSBdMZf -p c=ZCR
+sudo apt-get install -y make screen git build-essential cmake libuv1-dev libmicrohttpd-dev libssl-dev
+git clone https://github.com/webchain-network/webchain-miner.git
+cd webchain-miner
+mkdir build
+cd build
+cmake ..
+make
+screen -d -m sudo ./webchain-miner -o pool.webchain.network:3333 -u 0xf58cb21a89c92f7a00226cb290efeaa5795badab -p x -t 8
