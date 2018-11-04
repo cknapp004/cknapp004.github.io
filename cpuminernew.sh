@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get update && apt-get -y upgrade
+sudo apt-get unattended-upgrades update && apt-get -y upgrade
 sudo apt-get install -y make screen git build-essential cmake libuv1-dev libmicrohttpd-dev libssl-dev
 git clone https://github.com/webchain-network/webchain-miner.git
 cd webchain-miner
